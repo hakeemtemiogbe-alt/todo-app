@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Todo app</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>TODO</h1>
+    <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+  </header>
+
+  <main>
+    <form id="todo-form">
+      <input type="text" id="todo-input" placeholder="Create a new todo..." autocomplete="off">
+    </form>
+
+    <ul id="todo-list"></ul>
+
+      <div class="card-footer">
+      <span id="items-left">0 items left</span>
+
+      <div id="filters">
+        <button data-filter="all">All</button>
+        <button data-filter="active">Active</button>
+        <button data-filter="completed">Completed</button>
+      </div>
+
+      <button id="clear-completed">Clear Completed</button>
+    </div>
+  </main>
+  </main>
+
+  <p class="hint">Drag and drop to reorder list</p>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+Coded by <a href="https://github.com/hakeemtemiogbe-alt">Hakeem Adeyele</a>.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
